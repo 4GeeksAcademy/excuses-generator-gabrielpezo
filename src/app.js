@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = () => {
   document.querySelector("#excuse").innerHTML = excuses();
-  console.log("Hello Rigo from the console! ");
+  console.log(excuses);
 };
 let excuses = () => {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
@@ -18,21 +18,12 @@ let excuses = () => {
     "right on time",
     "when I finished",
     "during my lunch",
-    "while I was praying"
+    "while I was praying",
   ];
 
   let whoarr = Math.floor(Math.random() * who.lenght);
   let actionarr = Math.floor(Math.random() * action.lenght);
   let whatarr = Math.floor(Math.random() * what.lenght);
   let whenarr = Math.floor(Math.random() * when.lenght);
-
-  return;
-  who[whoarr] +
-    " " +
-    action[actionarr] +
-    " " +
-    what[whatarr] +
-    " " +
-    whenarr[whenarr] +
-    ".";
+  return who[whoarr] + " " + action[actionarr] + " " + what[whatarr] + " " + whenarr[whenarr] + ".";
 };
