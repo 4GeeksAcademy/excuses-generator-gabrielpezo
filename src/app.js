@@ -7,7 +7,6 @@ import "./assets/img/4geeks.ico";
 
 window.onload = () => {
   document.querySelector("#excuse").innerHTML = excuses();
-  console.log();
 };
 let excuses = () => {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
@@ -37,3 +36,5 @@ let excuses = () => {
     "."
   );
 };
+let excusesComplete = excuses();
+console.log(excusesComplete);
